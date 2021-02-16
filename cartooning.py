@@ -15,6 +15,11 @@ cartoon = cv2.bitwise_and(color, color, mask=edges)
 cv2.imshow("images", img)
 cv2.imshow("edges", edges)
 cv2.imshow("Cartoon", cartoon)
+# Using cv2.imwrite() method
+# Saving the image
+cv2.imwrite('assets/IMG_1393_2.jpg', cartoon)
+
+
 wait = True
 while wait:
   wait = cv2.waitKey()=='q113' # hit q to exit
